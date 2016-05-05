@@ -12,5 +12,5 @@
 | Web      | 25    | [Wallowing Wallabies - Part One](#)                |
 | Web      | 50    | [Wallowing Wallabies - Part Two](#)                |
 | Web      | 150   | [Wallowing Wallabies - Part Three](#)              |
-| Web      | 50    | [Spotted Quoll](#)                                 |
+| Web      | 50    | [Spotted Quoll](./web-Spotted_Quoll.md)            |
 
