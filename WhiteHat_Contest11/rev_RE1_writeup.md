@@ -11,7 +11,7 @@ http://material.wargame.whitehat.vn/contests/11/re1_d3309936b177b41dada3796c4c3a
 
 ## Answer
 
-```re1_d3309936b177b41dada3796c4c3acadf.zip``` の中には，```RE100``` というファイルが入っている．
+```re1_d3309936b177b41dada3796c4c3acadf.zip``` の中に```RE100``` というファイルが入っている．
 
 ```zsh
 % file RE100
@@ -38,7 +38,7 @@ Hopper Disassemblerで静的解析する．
 ```
 
 適当にStringsを眺めてると怪しい文字列を発見．  
-処理を追ってみると↑の文字列をシャッフルして入力と比較していることがわかる．
+処理を追ってみると，入力された文字列をシャッフルして↑の文字列と比較していることがわかる．
 
 ```
 00000000004089a4	mov	rax,	qword	[ss:rbp+var_58]	;	XREF=_Z10confuseKeyPci+200
@@ -94,15 +94,18 @@ Hopper Disassemblerで静的解析する．
 0000000000408a79	call	j_strcat
 ```
 
-1. **{daf29f59034938ae4efd53fc275d81053ed5be8c}**から一部分をstrncpyで抜き出す x 4回．   
+1. 入力された文字列から一部分をstrncpyで抜き出す x 4回．   
 2. 抜き出した文字列をstrcatで連結する x 4回．  
 
-この処理をシミュレートして文字列をシャッフルする  
+入力された文字列は↓のようにシャッフルされる． 
 ```
-{daf29f59034938ae4efd53fc275d81053ed5be8c}
+{AAAAAAAAAABBBBBBBBBBCCCCCCCCCCDDDDDDDDDD}
                     ↓
-{53fc275d81053ed5be8cdaf29f59034938ae4efd}
+{CCCCCCCCCCDDDDDDDDDDAAAAAAAAAABBBBBBBBBB}
 ```
+
+変換後の文字列が **{daf29f59034938ae4efd53fc275d81053ed5be8c}** になれば良いので，   
+正しい入力文字列は **{53fc275d81053ed5be8cdaf29f59034938ae4efd}**であることが分かる．
 
 **RE100**に打ち込んでみると
 
