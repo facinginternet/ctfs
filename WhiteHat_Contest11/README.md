@@ -15,6 +15,6 @@
 ## Write-up
 | Category            | Point | Title                                           |
 |---------------------|:-----:|-------------------------------------------------|
-| Forensics           | 200   | [WYGINWYS(what you get is not what you see)](#) |
+| Forensics           | 200   | [WYGINWYS(what you get is not what you see)](wyginwys.md) |
 | Reverse Engineering | 100   | [RE1](rev_RE1_writeup.md)                                        |
 | Reverse Engineering | 100   | [RE3](rev_RE3_writeup.md)                                        |
