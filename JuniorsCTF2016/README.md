@@ -12,7 +12,11 @@
 - [tsuyoppe](https://github.com/tsuyoppe)
 
 ## Write-up
-| Category | POINT | Title |
-| :-:      | :-:   | :-:   |
-|----------|-------|-------|
+| Category                  | POINT | Title                                                 |
+| :-:                       | :-:   | :-:                                                   |
+| trivial web               | 100   | [Black Suprematic Square](./Black_Suprematic_Square/) |
+| trivial crypto recon      | 200   | [Here goes!](./Here_goes!/)                           |
+| trivial forensic          | 200   | [Clone Attack](./Clone_Attack/)                       |
+| trivial admin             | 400   | [ROFL](./ROFL/)                                       |
+| trivial network admin web | 100   | [Find The Gobblewonker](./Find_The_Gobblewonker/)
 
