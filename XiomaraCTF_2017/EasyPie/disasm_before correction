@@ -1,0 +1,66 @@
+  4           0 LOAD_CONST               1 (0)
+              3 LOAD_CONST               2 (-15)
+              6 LOAD_CONST               3 (6)
+              9 LOAD_CONST               4 (-2)
+             12 LOAD_CONST               5 (-12)
+             15 LOAD_CONST               6 (17)
+             18 LOAD_CONST               7 (-17)
+             21 LOAD_CONST               8 (26)
+             24 LOAD_CONST               9 (-13)
+             27 LOAD_CONST              10 (-62)
+             30 LOAD_CONST              11 (71)
+             33 LOAD_CONST              12 (-24)
+             36 LOAD_CONST              13 (21)
+             39 LOAD_CONST              14 (-44)
+             42 LOAD_CONST              15 (-20)
+             45 LOAD_CONST              16 (64)
+             48 LOAD_CONST              17 (-21)
+             51 LOAD_CONST              18 (-8)
+             54 LOAD_CONST              19 (-35)
+             57 LOAD_CONST              20 (1)
+             60 LOAD_CONST              21 (57)
+             63 LOAD_CONST              22 (-71)
+             66 LOAD_CONST              23 (77)
+             69 LOAD_CONST              17 (-21)
+             72 LOAD_CONST              24 (9)
+             75 LOAD_CONST              25 (-52)
+             78 LOAD_CONST              26 (62)
+             81 LOAD_CONST              27 (-46)
+             84 LOAD_CONST              21 (57)
+             87 BUILD_LIST              29
+             90 STORE_FAST               0 (res)
+
+  5          93 LOAD_CONST              28 ('x')
+             96 STORE_FAST               1 (start)
+
+  6          99 LOAD_CONST              29 ('')
+            102 STORE_FAST               2 (flag)
+
+  8         105 SETUP_LOOP              46 (to 154)
+            108 LOAD_FAST                0 (res)
+            111 GET_ITER            
+        >>  112 FOR_ITER                38 (to 153)
+            115 STORE_FAST               3 (i)
+
+  9         118 LOAD_GLOBAL              0 (chr)
+            121 LOAD_GLOBAL              1 (ord)
+            124 LOAD_FAST                1 (start)
+            127 CALL_FUNCTION            1
+            130 LOAD_FAST                3 (i)
+            133 BINARY_ADD          
+            134 CALL_FUNCTION            1
+            137 STORE_FAST               1 (start)
+
+ 10         140 LOAD_FAST                2 (flag)
+            143 LOAD_FAST                1 (start)
+            146 INPLACE_ADD         
+            147 STORE_FAST               2 (flag)
+            150 JUMP_ABSOLUTE          112
+        >>  153 POP_BLOCK           
+
+ 11     >>  154 LOAD_FAST                2 (flag)
+            157 PRINT_ITEM          
+            158 PRINT_NEWLINE       
+            159 LOAD_CONST               0 (None)
+            162 RETURN_VALUE        
+xiomara{n0w_tH4t_W45n't_h4rD}
