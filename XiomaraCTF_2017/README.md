@@ -13,4 +13,5 @@
 ## Write-up
 | Category                  | POINT | Title                                                 |
 | :-:                       | :-:   | :-:                                                   |
-| Reversing               | 100   | [EasyPie](./EasyPie/) |
+| Reversing                 | 100   | [EasyPie](./EasyPie/)                                 |
+| Forensics & Network       | 100   | [(not) Guilty Boyfriend](./not- Guilty Boyfriend/)    |
