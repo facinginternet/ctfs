@@ -15,3 +15,4 @@
 | :-:                       | :-:   | :-:                                                   |
 | Reversing                 | 100   | [EasyPie](./EasyPie/)                                 |
 | Forensics & Network       | 100   | [(not) Guilty Boyfriend](./not- Guilty Boyfriend/)    |
+| Web Exploitation          | 50    | [Lulz](./Lulz/)                                       |
